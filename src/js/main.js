@@ -8,10 +8,10 @@ const togglePassword = {
 
   toggle(){
     this.button.addEventListener('click', ()=>{
-      if (this.input.getAttribute('type') === 'password') {
-        this.input.setAttribute('type', 'text')
-      } else if(this.input.getAttribute('type') === 'text'){
-        this.input.setAttribute('type', 'password');
+      if (this.input.type === 'password') {
+        this.input.type = 'text';
+      } else if(this.input.type === 'text'){
+        this.input.type = 'password';
       }
     });
   },

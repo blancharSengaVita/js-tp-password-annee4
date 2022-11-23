@@ -1,4 +1,3 @@
-
 const togglePassword = {
   elementCible(){
     document.documentElement.classList.add('js-enabled');
@@ -8,18 +7,14 @@ const togglePassword = {
 
   toggle(){
     this.button.addEventListener('click', ()=>{
-      if (this.input.type === 'password') {
-        this.input.type = 'text';
-      } else if(this.input.type === 'text'){
-        this.input.type = 'password';
-      }
+      this.input.type === 'password' ? this.input.type = 'text': this.input.type = 'password';
     });
   },
 
   init(){
     this.elementCible();
     this.toggle();
-  }
+  },
 }
 
 togglePassword.init();

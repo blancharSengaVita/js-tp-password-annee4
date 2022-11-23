@@ -1,0 +1,58 @@
+body {
+  background: tomato;
+  font-family: "Avenir Next", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.label {
+  display: block;
+  margin-bottom: .4rem;
+}
+
+.main-header {
+  color: white;
+  text-align: center;
+}
+
+// styles
+.input__item {
+  background: #fff;
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, .3);
+  margin: 10% auto;
+  padding: 1rem;
+  max-width: 400px;
+
+  .form-row {
+    position: relative;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 50px;
+    border: 1px solid #ccc;
+  }
+
+  .showPass {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 11px;
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    margin-right: 10px;
+    cursor: pointer;
+    color: dodgerblue;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

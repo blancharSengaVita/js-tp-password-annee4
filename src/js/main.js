@@ -21,7 +21,7 @@ const showPassword = {
     });
   }
 };
-object.init();
+showPassword.init();
 
 
 
